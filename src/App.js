@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import './styles/global.css'
+import headerImg from './images/dashboard-header-image.png'
+import Card from './components/Card'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div className="Dashboard">
+      <button className="sidebar">^</button>
+      <header>
+        <h1>Veja a situação financeira da sua empresa</h1>
+        <img src={headerImg} alt="Veja a situação financeira da sua empresa"/>
       </header>
+      <section className="cards">
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+      </section>
     </div>
   );
 }
