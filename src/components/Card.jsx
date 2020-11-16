@@ -1,22 +1,23 @@
 import '../styles/components/card.css'
 import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
+import { Link } from 'react-router-dom';
 
-export default function Card() {
+export default function Card(props) {
   return (
-    <div className="Card">
+    <Link to={props.title} className="Card">
       <div className="info">
         <h2 className="card-title">
-          <span>custo de acquisição do cliente</span>
-          <strong>CAC</strong>
+          <span>{props.subtitle}</span>
+          <strong>{props.title}</strong>
         </h2>
-        <div className="money">
+        {props.money && <div className="money">
           <span>R$</span>
-          <strong>100,00</strong>
-        </div>
+          <strong>{props.money}</strong>
+        </div>}
         <div title="Médio" className="situation" style={{background: "#FCEE21"}}  ></div>
-        <div className="graphic">
-          <CircularProgressbar value={80} text={`${80}%`} 
+        {props.graphic && <div className="graphic">
+          <CircularProgressbar value={props.value || 100} text={props.graphic} 
             strokeWidth={12}
             styles={buildStyles({
               pathColor: ` #23294F`,
@@ -26,11 +27,11 @@ export default function Card() {
               textSize: `24px`
             }
           )} />
-        </div>
+        </div>}
       </div>
       <div className="rating">
         <span>Pontuação: 4/5</span>
       </div>
-    </div>
+    </Link>
   )
 }

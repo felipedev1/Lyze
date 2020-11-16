@@ -1,0 +1,28 @@
+.home-page {
+  color: #FFF;
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  background: linear-gradient(to right bottom, #1E2146, #5779AB, #6B98CF);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-page .complete {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-page .complete p {
+  font-size: 28px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.home-page .complete a {
+  text-decoration: none;
+  font-weight: 700;
+}
