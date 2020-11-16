@@ -9,6 +9,13 @@
   justify-content: center;
 }
 
+.home-page .logo {
+  position: absolute;
+  width: 12vw;
+  left: 6vw;
+  top: 20px;
+}
+
 .home-page .complete {
   display: flex;
   flex-direction: column;

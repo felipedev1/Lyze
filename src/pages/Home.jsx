@@ -3,6 +3,7 @@ import { useState } from 'react'
 import { Button } from "@material-ui/core"
 import { Link } from "react-router-dom"
 
+import logoImg from '../images/logo-desktop.png'
 import '../styles/pages/home.css'
 
 const questions = [
@@ -34,6 +35,7 @@ function Home() {
   }
   return (
     <div className="home-page">
+      <img  className="logo" src={logoImg} alt="Lyze"/>
       {progress < 100 ? (
         <QuestionForm next={next} question={question} current={currentQuestion} />
       ) : (
