@@ -21,7 +21,7 @@ function Dashboard() {
         <Card title="CAC" subtitle="Custo de Aquisição do Cliente" money="100,00" />
         <Card title="LTV" subtitle="valor da Vida Útil do Cliente" money="478,00" />
         <Card title="LTV/CAC" subtitle="Relação entre CAC e LTV" graphic="4,8x" />
-        <Card title="CHURIN" subtitle="Perda e Rotatividade de Clientes" value={3} graphic="3%" />
+        <Card title="CHURN" subtitle="Perda e Rotatividade de Clientes" value={3} graphic="3%" />
         <Card title="MARGEM" subtitle="Margem Operacional" value={66.7} graphic="66,7%" />
         <Card title="LUCRATIVIDADE" subtitle="Lucratividade Líquida" value={20} graphic="20%" />
       </section>

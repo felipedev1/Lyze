@@ -7,7 +7,7 @@ import logoImg from '../images/logo-desktop.png'
 import '../styles/pages/home.css'
 
 const questions = [
-  "Como podemos te ajudar hoje?",
+  "Olá. Qual o seu nome?",
   "Quanto você gasta mensalmente para divulgar seu negócio? (ex.: Canais de vendas, marketing, facebook ads, Google ads, Instagram, etc)",
   "Quantos clientes novos você recebe em 1 mês?",
   "Quanto o seu cliente compra em média, num período de 1 mês?",
